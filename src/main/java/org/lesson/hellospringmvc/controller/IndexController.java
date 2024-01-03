@@ -16,8 +16,8 @@ public class IndexController {
     public String index(Model model){
         //Gemero un numero casuale
         Random numberRandom = new Random();
-        int number = numberRandom.nextInt(1,7);
-        model.addAttribute("numberRandom",number);
+        int numberToInsert  = numberRandom.nextInt(1,7);
+        model.addAttribute("numberRandom",numberToInsert );
         return "home";
     }
 
